@@ -1,0 +1,106 @@
+:root {
+  --bg-light: #f9f9f9;
+  --text-light: #222;
+  --card-light: #ffffff;
+
+  --bg-dark: #121212;
+  --text-dark: #f1f1f1;
+  --card-dark: #1e1e1e;
+
+  --primary: #25D366;
+  --secondary: #E1306C;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--bg-light);
+  color: var(--text-light);
+  transition: all 0.3s ease;
+}
+
+body.dark {
+  background-color: var(--bg-dark);
+  color: var(--text-dark);
+}
+
+.container {
+  max-width: 420px;
+  margin: auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.card {
+  background-color: var(--card-light);
+  padding: 25px;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+  transition: all 0.3s ease;
+}
+
+body.dark .card {
+  background-color: var(--card-dark);
+}
+
+h1 {
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 15px;
+  margin-bottom: 20px;
+  opacity: 0.9;
+}
+
+.btn {
+  display: block;
+  width: 100%;
+  padding: 14px;
+  margin: 10px 0;
+  border-radius: 10px;
+  border: none;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  text-decoration: none;
+  color: #fff;
+  transition: transform 0.2s;
+}
+
+.btn:hover {
+  transform: scale(1.03);
+}
+
+.whatsapp {
+  background-color: var(--primary);
+}
+
+.instagram {
+  background: linear-gradient(45deg, #f58529, #dd2a7b, #8134af);
+}
+
+.pdf {
+  background-color: #555;
+}
+
+body.dark .pdf {
+  background-color: #777;
+}
+
+.toggle {
+  margin-top: 15px;
+  cursor: pointer;
+  font-size: 14px;
+  opacity: 0.8;
+}
+
+input[type="file"] {
+  display: none;
+}
+
+.footer {
+  margin-top: 20px;
+  font-size: 12px;
+  opacity: 0.6;
+}
